@@ -32,8 +32,11 @@ t = turtle.Turtle()
 #   t.forward(50)
 #   t.right(90)
 
+t.color('#0866ff')
 t.circle(50)
+t.color('white')
 t.forward(100)
+t.color('red')
 t.circle(50)
 
 screen.mainloop()
