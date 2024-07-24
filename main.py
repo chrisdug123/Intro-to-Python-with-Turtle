@@ -54,15 +54,16 @@
 # screen.mainloop()
 from turtle import *
 import turtle
-t=turtle.Turtle()
+
+t = turtle.Turtle()
 screen = turtle.Screen()
 screen.setup(1.0, 1.0)
 
-planetColour=["Orange","Grey","Red","Green"]
-planetSize=[60,20,40,30]
-planetDistance=[100,80,90,0]
-
-for i in range (4):
+planetColour = ["Orange", "Grey", "Red", "Green"]
+planetSize = [60, 20, 40, 30]
+planetDistance = [100, 80, 90, 0]
+bgcolor("black")
+for i in range(4):
   t.color(planetColour[i])
   t.begin_fill()
   t.circle(planetSize[i])
@@ -70,4 +71,5 @@ for i in range (4):
   t.penup()
   t.forward(planetDistance[i])
 
+t.hideturtle()
 screen.mainloop()
