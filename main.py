@@ -28,8 +28,12 @@ import turtle
 screen = turtle.Screen()
 screen.setup(1.0, 1.0)
 t = turtle.Turtle()
-for i in range(4):
-  t.forward(50)
-  t.right(90)
+# for i in range(4):
+#   t.forward(50)
+#   t.right(90)
+
+t.circle(50)
+t.forward(100)
+t.circle(50)
 
 screen.mainloop()
